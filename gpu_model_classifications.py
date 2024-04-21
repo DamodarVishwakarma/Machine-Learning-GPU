@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from version_2.gpu_model_architectures import LSTMClassifier, TFTClassifier, GBDTClassifier, TransformerClassifier
+from gpu_model_architectures import LSTMClassifier, TFTClassifier, GBDTClassifier, TransformerClassifier
 class BaseModel:
     def __init__(self):
         pass

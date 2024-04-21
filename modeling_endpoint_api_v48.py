@@ -10,19 +10,19 @@ import os
 import sqlalchemy
 from sqlalchemy import and_
 #from modeling_classes_classification_v2 import SVMModel, DecisionTreeModel, ANNModel, LinearModel
-from version_1.modeling_classes_classification_v3 import *
-from version_1.database_manager import DatabaseManager
-from version_1.Visualization_v3 import Visualization
+from modeling_classes_classification_v3 import *
+from database_manager import DatabaseManager
+from Visualization_v3 import Visualization
 # from train_handler import train_user_model, save_model_to_file, get_device_info, expanding_window_split, get_date_index, json_serial, check_items_type, deep_convert_dict, convert_numpy_types
 #from constants import model_device_mapping, MODEL_MAPPER
 # from utils import numpy_datetime_to_datetime, safely_get_value
-from version_1.gpu_instance_handler import GpuInstanceHandler
+from gpu_instance_handler import GpuInstanceHandler
 from sqlalchemy import or_
 import logging
-from version_1.train_handler_v5 import *
+from train_handler_v5 import *
 import json
 import numpy as np
-from version_1.constants_v4 import *
+from constants_v4 import *
 from flask import Response
 from datetime import date
 from sqlalchemy import and_  # Import the `and_` function for compound WHERE clauses
@@ -1154,6 +1154,6 @@ def last_trained_model():
         return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5013, debug=True)  # Set host to '0.0.0.0' to make it accessible externally
+    app.run(host='0.0.0.0', port=5013, debug=False)  # Set host to '0.0.0.0' to make it accessible externally
 
 

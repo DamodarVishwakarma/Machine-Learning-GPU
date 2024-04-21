@@ -1,5 +1,5 @@
-from version_1.modeling_classes_classification_v3 import *
-from version_2.gpu_model_classifications import *
+from modeling_classes_classification_v3 import *
+from gpu_model_classifications import *
 import logging
 
 log_filename = 'logs/modeling_endpoint_constants.log'

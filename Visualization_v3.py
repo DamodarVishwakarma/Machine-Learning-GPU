@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 # import seaborn as sns
 import base64
 from io import BytesIO
-from sklearn.metrics import plot_confusion_matrix
+# from sklearn.metrics import plot_confusion_matrix
 from sklearn.metrics import roc_curve, auc
 from sklearn.metrics import confusion_matrix, precision_recall_fscore_support, roc_auc_score, log_loss, mean_absolute_error, mean_squared_error, r2_score, accuracy_score, explained_variance_score
 import traceback
