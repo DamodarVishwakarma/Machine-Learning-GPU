@@ -62,10 +62,10 @@ logger.addHandler(file_handler)
 # Connect to user_db
 db_manager = DatabaseManager(
     username="postgres", 
-    password="postgres", 
-    host="localhost", 
+    password="adsta1992",
+    host="internaldb.c0rz9kyyn4jp.us-east-2.rds.amazonaws.com",
     db_name="internaldb",
-    # use_ssl = True
+    use_ssl = True
 
 )
 
@@ -1154,6 +1154,6 @@ def last_trained_model():
         return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5013, debug=False)  # Set host to '0.0.0.0' to make it accessible externally
+    app.run(host='0.0.0.0', port=5013, debug=True)  # Set host to '0.0.0.0' to make it accessible externally
 
 
